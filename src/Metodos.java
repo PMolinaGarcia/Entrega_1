@@ -48,9 +48,7 @@ public class Metodos {
     }
 
     public static int sumaParesHastaN(int n){
-
         int sumaPares=0;
-
         if (n%2==1){
             n--;
         }
@@ -94,12 +92,10 @@ public class Metodos {
     }
 
     public static int calcularProductoEscalar(List <Integer> vector1, List <Integer> vector2){
-
         if (vector1.size()!= vector2.size()){
-            System.out.println("El producto escalar solo es posible entre vectores con la misma cantidad de elementos.");
+            System.out.println("El producto escalar solo es posible entre vectores de las mismas dimensiones.");
         }
         int escalar = 0;
-
         for (int i = 0; i<vector1.size(); i++){
             escalar+=vector1.get(i)*vector2.get(i);
         }
