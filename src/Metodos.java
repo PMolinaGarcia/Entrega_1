@@ -44,7 +44,7 @@ public class Metodos {
         for (Integer num: listaDada){
             parentesis += Math.pow((num - Metodos.mediaLista(listaDada)),2);
         }
-        return Math.sqrt(parentesis/(listaDada.size()-1));
+        return Math.sqrt(parentesis/(listaDada.size()));
     }
 
     public static int sumaParesHastaN(int n){
